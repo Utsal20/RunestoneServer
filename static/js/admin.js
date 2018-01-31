@@ -1560,7 +1560,7 @@ function renderRunestoneComponent(componentSrc, whereDiv, moreOpts) {
     opt.lang = $(opt.orig).data('lang')
     opt.useRunestoneServices = false;
     opt.graderactive = false;
-    opt.python3 = true;
+    opt.python3 = eBookConfig.python3;
     if (typeof moreOpts !== 'undefined') {
         for (let key in moreOpts) {
             opt[key] = moreOpts[key]
